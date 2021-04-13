@@ -1,0 +1,19 @@
+#shapes {
+	display: grid;
+	grid-template-columns: auto 50% auto;
+	grid-template-areas: ". shapes .";
+	height: 100vh;
+	> div {
+		grid-area: shapes;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		#blue-circle {
+			height: 200px;
+			width: 200px;
+			background-color: rgb(77, 128, 224);
+			border-radius: 100%;
+		}
+	}
+}
